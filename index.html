@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <header class="header" id="top">
@@ -315,7 +316,7 @@
             </div>
         </section>
 
-        <!-- قسم التواصل والانضمام المربوط بـ Formspree -->
+        <!-- قسم التواصل والانضمام المربوط بـ Formspree الخاص بك -->
         <section class="section contact-section" id="contact" style="padding: 60px 20px; text-align: center;">
             <div class="section-title reveal">
                 <p class="eyebrow">انضم إلينا</p>
@@ -324,36 +325,27 @@
                 <p>املأ البيانات وسنتواصل معك فوراً</p>
             </div>
 
-            <div class="reveal"
-                style="max-width: 600px; margin: 0 auto; background: var(--card-bg, #190c33); padding: 30px; border-radius: 16px; border: 1px solid var(--gold-color, #d4af37);">
-                <form id="contactForm" action="https://formspree.io/f/mdeegvpj" method="POST"
-                    style="display: flex; flex-direction: column; gap: 15px; text-align: right;">
+            <div class="reveal" style="max-width: 600px; margin: 0 auto; background: var(--card-bg, #190c33); padding: 30px; border-radius: 16px; border: 1px solid var(--gold-color, #d4af37);">
+                <form id="contactForm" action="https://formspree.io/f/mdeegvpj" method="POST" style="display: flex; flex-direction: column; gap: 15px; text-align: right;">
                     <div style="display: flex; flex-direction: column; gap: 5px;">
                         <label for="name" style="color: #fff; font-weight: bold;">الاسم بالكامل:</label>
-                        <input type="text" id="name" name="الاسم" required placeholder="اكتب اسمك هنا"
-                            style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;">
+                        <input type="text" id="name" name="الاسم" required placeholder="اكتب اسمك هنا" style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;">
                     </div>
                     <div style="display: flex; flex-direction: column; gap: 5px;">
                         <label for="phone" style="color: #fff; font-weight: bold;">رقم الهاتف / الواتساب:</label>
-                        <input type="tel" id="phone" name="رقم الهاتف" required placeholder="01xxxxxxxxx"
-                            style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;">
+                        <input type="tel" id="phone" name="رقم الهاتف" required placeholder="01xxxxxxxxx" style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;">
                     </div>
                     <div style="display: flex; flex-direction: column; gap: 5px;">
                         <label for="message" style="color: #fff; font-weight: bold;">رسالتك أو طلب الانضمام:</label>
-                        <textarea id="message" name="الرسالة" rows="4" required
-                            placeholder="اكتب رسالتك أو مرحلتك العمرية..."
-                            style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;"></textarea>
+                        <textarea id="message" name="الرسالة" rows="4" required placeholder="اكتب رسالتك أو مرحلتك العمرية..." style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-gold" style="margin-top: 10px; cursor: pointer;">إرسال البيانات
-                        ✉️</button>
-                    <p id="formStatus"
-                        style="margin-top: 10px; font-weight: bold; text-align: center; color: var(--gold-color, #d4af37);">
-                    </p>
+                    <button type="submit" class="btn btn-gold" style="margin-top: 10px; cursor: pointer;">إرسال البيانات ✉️</button>
+                    <p id="formStatus" style="margin-top: 10px; font-weight: bold; text-align: center; color: var(--gold-color, #d4af37);"></p>
                 </form>
             </div>
         </section>
 
-        <!-- قسم الاختبار الكشفي التفاعلي (في آخر الصفحة) -->
+        <!-- قسم الاختبار الكشفي التفاعلي -->
         <section class="section quiz-section" id="quiz" style="padding: 60px 20px; text-align: center;">
             <div class="section-title reveal">
                 <p class="eyebrow">اختبر معلوماتك</p>
@@ -362,15 +354,11 @@
                 <p>جاوب الأسئلة واكتشف مستواك الكشفي!</p>
             </div>
 
-            <div class="reveal"
-                style="max-width: 600px; margin: 0 auto; background: var(--card-bg, #190c33); padding: 30px; border-radius: 16px; border: 1px solid var(--gold-color, #d4af37); text-align: right;">
+            <div class="reveal" style="max-width: 600px; margin: 0 auto; background: var(--card-bg, #190c33); padding: 30px; border-radius: 16px; border: 1px solid var(--gold-color, #d4af37); text-align: right;">
                 <div id="quizBox">
-                    <h3 id="questionText" style="color: var(--gold-color, #d4af37); margin-top: 0; text-align: center;">
-                        جاري تحميل السؤال...</h3>
-                    <div id="optionsContainer"
-                        style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;"></div>
-                    <button id="nextBtn" class="btn btn-gold"
-                        style="margin-top: 20px; display: none; width: 100%;">السؤال التالي ➔</button>
+                    <h3 id="questionText" style="color: var(--gold-color, #d4af37); margin-top: 0; text-align: center;">جاري تحميل السؤال...</h3>
+                    <div id="optionsContainer" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;"></div>
+                    <button id="nextBtn" class="btn btn-gold" style="margin-top: 20px; display: none; width: 100%;">السؤال التالي ➔</button>
                 </div>
                 <div id="resultBox" style="display: none; text-align: center;">
                     <h3 id="scoreText" style="color: var(--gold-color, #d4af37); font-size: 1.8rem;"></h3>
@@ -415,7 +403,7 @@
 
     <button class="back-to-top" id="backToTop" type="button" aria-label="العودة لأعلى الصفحة">↑</button>
 
-    <!-- أكواد JavaScript للكويز ونموذج التواصل -->
+    <!-- JavaScript للكويز والنموذج -->
     <script>
         const quizData = [
             {
@@ -480,7 +468,7 @@
         function selectOption(selectedIndex, selectedButton) {
             const correctIndex = quizData[currentQuestionIndex].correct;
             const buttons = optionsContainer.querySelectorAll('button');
-
+            
             buttons.forEach((btn, index) => {
                 btn.disabled = true;
                 if (index === correctIndex) {
@@ -540,7 +528,7 @@
         const formStatus = document.getElementById('formStatus');
 
         if (contactForm) {
-            contactForm.addEventListener('submit', async function (event) {
+            contactForm.addEventListener('submit', async function(event) {
                 event.preventDefault();
                 const data = new FormData(event.target);
                 if (formStatus) formStatus.innerText = "جاري الإرسال...";
@@ -549,7 +537,7 @@
                     const response = await fetch(event.target.action, {
                         method: contactForm.method,
                         body: data,
-                        headers: {'Accept': 'application/json'}
+                        headers: { 'Accept': 'application/json' }
                     });
 
                     if (response.ok) {
