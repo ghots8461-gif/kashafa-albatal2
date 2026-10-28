@@ -43,6 +43,8 @@
             <a href="#learning" class="nav-link">تعليم الكشافة</a>
             <a href="#gallery" class="nav-link">معرض الصور</a>
             <a href="#leaders" class="nav-link">فريقنا</a>
+            <a href="#contact" class="nav-link">انضم إلينا</a>
+            <a href="#quiz" class="nav-link">الاختبار</a>
         </nav>
     </header>
 
@@ -261,47 +263,24 @@
             </div>
 
             <div class="gallery-grid">
-                <button class="gallery-item gallery-large reveal" type="button" data-image="photos/activity1.jpg"
+                <button class="gallery-item gallery-large reveal" type="button" data-image="background.jpg"
                     aria-label="تكبير صورة نشاط كشفي">
-                    <img src="sactivity1.jpg" alt="نشاط كشفي" loading="lazy">
+                    <img src="background.jpg" alt="نشاط كشفي" loading="lazy">
                     <span class="gallery-caption">
                         <span><strong>نشاط كشفي</strong><small>نتعلم ونكتشف</small></span>
                         <span class="gallery-zoom">＋</span>
                     </span>
                 </button>
 
-                <button class="gallery-item reveal" type="button" data-image="photos/activity2.jpg"
+                <button class="gallery-item reveal" type="button" data-image="logo.jpg"
                     aria-label="تكبير صورة اجتماع الفرقة">
-                    <img src="activity2.jpg" alt="اجتماع الفرقة" loading="lazy">
+                    <img src="logo.jpg" alt="اجتماع الفرقة" loading="lazy">
                     <span class="gallery-caption">
-                        <span><strong>اجتماع الفرقة</strong><small>إيد واحدة</small></span>
-                        <span class="gallery-zoom">＋</span>
-                    </span>
-                </button>
-
-                <button class="gallery-item reveal" type="button" data-image="photos/camp.jpg"
-                    aria-label="تكبير صورة المعسكر">
-                    <img src="camp.jpg" alt="ذكريات المعسكر" loading="lazy">
-                    <span class="gallery-caption">
-                        <span><strong>ذكريات المعسكر</strong><small>مغامراتنا سوا</small></span>
-                        <span class="gallery-zoom">＋</span>
-                    </span>
-                </button>
-
-                <button class="gallery-item reveal" type="button" data-image="photos/trip.jpg"
-                    aria-label="تكبير صورة الرحلة الكشفية">
-                    <img src="trip.jpg" alt="رحلة كشفية" loading="lazy">
-                    <span class="gallery-caption">
-                        <span><strong>رحلة كشفية</strong><small>ذكريات بتجمعنا</small></span>
+                        <span><strong>شعار الفرقة</strong><small>إيد واحدة</small></span>
                         <span class="gallery-zoom">＋</span>
                     </span>
                 </button>
             </div>
-
-            <p class="gallery-note">
-                ضع صوركم الحقيقية داخل مجلد photos بالأسماء المكتوبة في الكود.
-                لا تنشر صور الأفراد دون الموافقات اللازمة.
-            </p>
         </section>
 
         <!-- القادة والأفراد -->
@@ -337,6 +316,71 @@
             </div>
         </section>
 
+        <!-- قسم التواصل والانضمام المربوط بـ Formspree -->
+        <section class="section contact-section" id="contact" style="padding: 60px 20px; text-align: center;">
+            <div class="section-title reveal">
+                <p class="eyebrow">انضم إلينا</p>
+                <h2>تواصل معنا</h2>
+                <span class="title-line"></span>
+                <p>املأ البيانات وسنتواصل معك فوراً</p>
+            </div>
+
+            <div class="reveal"
+                style="max-width: 600px; margin: 0 auto; background: var(--card-bg, #190c33); padding: 30px; border-radius: 16px; border: 1px solid var(--gold-color, #d4af37);">
+                <form id="contactForm" action="https://formspree.io/f/mdeegvpj" method="POST"
+                    style="display: flex; flex-direction: column; gap: 15px; text-align: right;">
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="name" style="color: #fff; font-weight: bold;">الاسم بالكامل:</label>
+                        <input type="text" id="name" name="الاسم" required placeholder="اكتب اسمك هنا"
+                            style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="phone" style="color: #fff; font-weight: bold;">رقم الهاتف / الواتساب:</label>
+                        <input type="tel" id="phone" name="رقم الهاتف" required placeholder="01xxxxxxxxx"
+                            style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="message" style="color: #fff; font-weight: bold;">رسالتك أو طلب الانضمام:</label>
+                        <textarea id="message" name="الرسالة" rows="4" required
+                            placeholder="اكتب رسالتك أو مرحلتك العمرية..."
+                            style="padding: 12px; border-radius: 8px; border: 1px solid #3d2375; background: #14092a; color: #fff; font-family: 'Cairo', sans-serif;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold" style="margin-top: 10px; cursor: pointer;">إرسال البيانات
+                        ✉️</button>
+                    <p id="formStatus"
+                        style="margin-top: 10px; font-weight: bold; text-align: center; color: var(--gold-color, #d4af37);">
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- قسم الاختبار الكشفي التفاعلي (في آخر الصفحة) -->
+        <section class="section quiz-section" id="quiz" style="padding: 60px 20px; text-align: center;">
+            <div class="section-title reveal">
+                <p class="eyebrow">اختبر معلوماتك</p>
+                <h2>الاختبار الكشفي التفاعلي ⚜️</h2>
+                <span class="title-line"></span>
+                <p>جاوب الأسئلة واكتشف مستواك الكشفي!</p>
+            </div>
+
+            <div class="reveal"
+                style="max-width: 600px; margin: 0 auto; background: var(--card-bg, #190c33); padding: 30px; border-radius: 16px; border: 1px solid var(--gold-color, #d4af37); text-align: right;">
+                <div id="quizBox">
+                    <h3 id="questionText" style="color: var(--gold-color, #d4af37); margin-top: 0; text-align: center;">
+                        جاري تحميل السؤال...</h3>
+                    <div id="optionsContainer"
+                        style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;"></div>
+                    <button id="nextBtn" class="btn btn-gold"
+                        style="margin-top: 20px; display: none; width: 100%;">السؤال التالي ➔</button>
+                </div>
+                <div id="resultBox" style="display: none; text-align: center;">
+                    <h3 id="scoreText" style="color: var(--gold-color, #d4af37); font-size: 1.8rem;"></h3>
+                    <p id="feedbackText" style="font-size: 1.2rem; margin: 15px 0; color: #fff;"></p>
+                    <button onclick="restartQuiz()" class="btn btn-gold">إعادة الاختبار 🔄</button>
+                </div>
+            </div>
+        </section>
+
         <!-- الختام -->
         <section class="join reveal">
             <div class="join-decoration">⚜</div>
@@ -361,21 +405,175 @@
     <!-- عارض الصور -->
     <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="عارض الصور">
         <button class="lightbox-close" id="closeLightbox" type="button" aria-label="إغلاق الصورة">×</button>
-
         <button class="lightbox-nav lightbox-prev" id="prevImage" type="button" aria-label="الصورة السابقة">›</button>
-
         <figure class="lightbox-figure">
             <img id="lightboxImage" src="" alt="صورة مكبرة">
             <figcaption id="lightboxCaption"></figcaption>
         </figure>
-
         <button class="lightbox-nav lightbox-next" id="nextImage" type="button" aria-label="الصورة التالية">‹</button>
-
         <p class="lightbox-counter" id="lightboxCounter"></p>
     </div>
 
     <button class="back-to-top" id="backToTop" type="button" aria-label="العودة لأعلى الصفحة">↑</button>
 
+    <!-- أكواد JavaScript للكويز ونموذج التواصل -->
+    <script>
+        const quizData = [
+            {
+                question: "ما هو شعار الكشافة الرسمي؟",
+                options: ["دايماً مستعدين", "إيد واحدة", "العمل الجاد", "الصدق دايماً"],
+                correct: 0
+            },
+            {
+                question: "متى تأسست فرقة كشافة البطل؟",
+                options: ["2020", "2023", "2025", "2026"],
+                correct: 2
+            },
+            {
+                question: "ما هي العقدة الأساسية المستعملة في ربط الحبال؟",
+                options: ["العقدة الأفقية", "العقدة التوتية", "عقدة الصياد", "العقدة الوتدية"],
+                correct: 0
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const nextBtn = document.getElementById('nextBtn');
+        const quizBox = document.getElementById('quizBox');
+        const resultBox = document.getElementById('resultBox');
+        const scoreText = document.getElementById('scoreText');
+        const feedbackText = document.getElementById('feedbackText');
+
+        function loadQuestion() {
+            resetState();
+            let currentQuiz = quizData[currentQuestionIndex];
+            if (questionText) {
+                questionText.innerText = `${currentQuestionIndex + 1}. ${currentQuiz.question}`;
+            }
+
+            currentQuiz.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.innerText = option;
+                button.style.padding = "12px";
+                button.style.background = "#20113f";
+                button.style.color = "#fff";
+                button.style.border = "1px solid #3d2375";
+                button.style.borderRadius = "8px";
+                button.style.cursor = "pointer";
+                button.style.fontFamily = "'Cairo', sans-serif";
+                button.style.fontSize = "1rem";
+                button.style.textAlign = "right";
+                button.addEventListener('click', () => selectOption(index, button));
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        function resetState() {
+            if (nextBtn) nextBtn.style.display = 'none';
+            while (optionsContainer && optionsContainer.firstChild) {
+                optionsContainer.removeChild(optionsContainer.firstChild);
+            }
+        }
+
+        function selectOption(selectedIndex, selectedButton) {
+            const correctIndex = quizData[currentQuestionIndex].correct;
+            const buttons = optionsContainer.querySelectorAll('button');
+
+            buttons.forEach((btn, index) => {
+                btn.disabled = true;
+                if (index === correctIndex) {
+                    btn.style.backgroundColor = '#28a745';
+                    btn.style.color = '#fff';
+                }
+            });
+
+            if (selectedIndex === correctIndex) {
+                score++;
+            } else {
+                selectedButton.style.backgroundColor = '#dc3545';
+                selectedButton.style.color = '#fff';
+            }
+
+            if (currentQuestionIndex < quizData.length - 1) {
+                if (nextBtn) nextBtn.style.display = 'block';
+            } else {
+                setTimeout(showResult, 1000);
+            }
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                currentQuestionIndex++;
+                loadQuestion();
+            });
+        }
+
+        function showResult() {
+            if (quizBox) quizBox.style.display = 'none';
+            if (resultBox) resultBox.style.display = 'block';
+            if (scoreText) scoreText.innerText = `درجتك هي: ${score} من ${quizData.length}`;
+            if (feedbackText) {
+                if (score === quizData.length) {
+                    feedbackText.innerText = "ممتاز! أنت كشاف بطل حقيقي ⚜️";
+                } else {
+                    feedbackText.innerText = "محاولة جيدة، راجع دروس الكشافة وجرب مرة أخرى!";
+                }
+            }
+        }
+
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            if (resultBox) resultBox.style.display = 'none';
+            if (quizBox) quizBox.style.display = 'block';
+            loadQuestion();
+        }
+
+        if (questionText) {
+            loadQuestion();
+        }
+
+        // معالجة إرسال النموذج عبر Formspree
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function (event) {
+                event.preventDefault();
+                const data = new FormData(event.target);
+                if (formStatus) formStatus.innerText = "جاري الإرسال...";
+
+                try {
+                    const response = await fetch(event.target.action, {
+                        method: contactForm.method,
+                        body: data,
+                        headers: {'Accept': 'application/json'}
+                    });
+
+                    if (response.ok) {
+                        if (formStatus) {
+                            formStatus.innerText = "تم إرسال بياناتك بنجاح! سنتواصل معك قريباً ⚜️";
+                            formStatus.style.color = "#28a745";
+                        }
+                        contactForm.reset();
+                    } else {
+                        if (formStatus) {
+                            formStatus.innerText = "عذراً، حدثت مشكلة أثناء الإرسال.";
+                            formStatus.style.color = "#dc3545";
+                        }
+                    }
+                } catch (error) {
+                    if (formStatus) {
+                        formStatus.innerText = "حدث خطأ في الشبكة، حاول مرة أخرى.";
+                        formStatus.style.color = "#dc3545";
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
