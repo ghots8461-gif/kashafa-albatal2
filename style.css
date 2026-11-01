@@ -1227,3 +1227,57 @@ button {
         bottom: 12px;
     }
 }
+
+/* زر الواتساب العائم */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    border: 2px solid var(--gold-color, #d4af37);
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* تأثير عند مرور الماوس */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* نص توضيحي عند التمرير فوق الزر */
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background-color: var(--card-bg, #190c33);
+    color: var(--gold-color, #d4af37);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 1px solid var(--gold-color, #d4af37);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
